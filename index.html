@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Silvia Reis" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/form-edit.ico"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Formulário Escolar - Preencha com Alegria!</h1>
+      <p>Vamos conhecer você melhor!😀</p>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Informações Pessoais:</legend>
+          <div>
+            <label for="name">Nome Completo:</label>
+            <input
+              type="text"
+              class="input-field"
+              id="name"
+              name="name"
+              required
+              placeholder="Digite seu nome completo"
+            />
+          </div>
+
+          <div>
+            <label for="idade">Idade:</label>
+            <input
+              type="number"
+              class="input-field"
+              id="idade"
+              name="idade"
+              value="1"
+              min="1"
+              max="100"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="dt_aniversario">Data de Aniversário:</label>
+            <input
+              type="date"
+              class="input-field"
+              id="dt_aniversario"
+              name="dt_aniversario"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="cpf">CPF</label>
+            <input
+              type="text"
+              class="input-field"
+              id="cpf"
+              name="cpf"
+              placeholder="000.000.000-00"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              class="input-field"
+              id="email"
+              name="email"
+              placeholder="exemplo@dominio.com"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informações Escolares</legend>
+          <div>
+            <label for="serie">Selecione a Série:</label>
+            <select id="serie" name="serie" required>
+              <option value="">Escolha...</option>
+              <option value="1º Ano Fundamental">1º Ano Fundamental</option>
+              <option value="2º Ano Fundamental">2º Ano Fundamental</option>
+              <option value="3º Ano Fundamental">3º Ano Fundamental</option>
+              <option value="4º Ano Fundamental">4º Ano Fundamental</option>
+              <option value="5º Ano Fundamental">5º Ano Fundamental</option>
+              <option value="6º Ano Fundamental">6º Ano Fundamental</option>
+              <option value="7º Ano Fundamental">7º Ano Fundamental</option>
+              <option value="8º Ano Fundamental">8º Ano Fundamental</option>
+              <option value="9º Ano Fundamental">9º Ano Fundamental</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="nome_instituicao">Nome da Instituição:</label>
+            <input
+              type="text"
+              class="input-field"
+              id="nome_instituicao"
+              name="nome_instituicao"
+              required
+              placeholder="Escola Fictícia do Saber"
+            />
+          </div>
+        </fieldset>
+        <div>
+          <fieldset>
+            <legend>Autorização</legend>
+
+            <label for="Autorizacao">
+              <input
+                type="checkbox"
+                id="Autorizacao"
+                name="Autorizacao"
+                required
+              />
+              Autorizo o uso dos meus dados para fins escolares</label
+            >
+          </fieldset>
+          <button type="submit">Enviar!</button>
+        </div>
+      </form>
+    </main>
+  </body>
+
+  <footer>
+    <address>Av. Djalma Dutra, s/n - Telégrafo - Belém/PA</address>
+    <p>
+      &copy; <time datetime="2025">2025</time> Formulário Escolar | Desenvolvido  por Silvia Reis
+    </p>
+  </footer>
+</html>
